@@ -1,0 +1,24 @@
+query Movies {
+    movies {
+      data {
+        id
+        attributes {
+          title
+          description
+          rating
+          release_date
+          createdAt
+          updatedAt
+          publishedAt
+          media {
+            data {
+              id
+              attributes {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
