@@ -11,6 +11,9 @@ interface Movie {
     updatedAt: Date;
     publishedAt: Date;
     media: Media;
+    reviews: {
+      data: [Review];
+    };
   };
 }
 
@@ -23,4 +26,15 @@ interface Media {
       };
     }
   ];
+}
+
+interface Review {
+  id: string;
+  attributes: {
+    review_text: string;
+    rating: number;
+    createdAt: Date;
+    updatedAt: Date;
+    publishedAt: Date;
+  };
 }

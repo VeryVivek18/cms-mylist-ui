@@ -1,0 +1,33 @@
+query getMovie($movieId: ID!) {
+  movie(id: $movieId) {
+    data {
+      id
+      attributes {
+        title
+        description
+        rating
+        release_date
+        publishedAt
+        media {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        reviews {
+          data {
+            id
+            attributes {
+              review_text
+              rating
+              createdAt
+              updatedAt
+              publishedAt
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
-import MoviesComponent from "@/components/MoviesComponent";
+import MoviesListComponent from "@/components/server/MoviesListComponent";
 
 function Page() {
-  return <MoviesComponent />;
+  return <MoviesListComponent />;
 }
 
 export default Page;
